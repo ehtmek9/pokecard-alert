@@ -1,0 +1,22 @@
+{
+  "mode": "demo",
+  "notify_soldout": false,
+
+  "products": [
+    { "name": "포켓몬카드 확장팩 (예시)", "code": "8800000000001" }
+  ],
+
+  "stores": [
+    { "name": "OO점 (예시)", "code": "STORE001" },
+    { "name": "XX점 (예시)", "code": "STORE002" }
+  ],
+
+  "api": {
+    "method": "GET",
+    "url": "https://여기에-확인한-재고조회-주소",
+    "params": { "storeCode": "{store}", "itemCode": "{product}" },
+    "json": null,
+    "headers": { "User-Agent": "Mozilla/5.0" },
+    "qty_path": "data.stockQty"
+  }
+}
